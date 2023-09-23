@@ -23,19 +23,20 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     transition: all 0.5s ease;
 }
 
 body {
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* Header Styles */
 
 header {
     background-color: var(--dark-background-color);
+    padding-bottom: 30px;
 }
 
 .container {
@@ -62,7 +63,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
 nav ul {
@@ -126,4 +127,53 @@ div.hero {
     width: 100%;
     height: auto;
     margin-top: -120px;
+}
+
+/* Main Section Styles */
+
+/* Project - Main Section */
+
+#projects {
+    background-color: var(--main-text-color);
+}
+
+.section-title {
+    margin: 30px auto;
+}
+
+.section-title .title {
+    text-align: center;
+    font-size: 36px;
+    color: var(--dark-text-color);
+    font-weight: var(--extra-bold);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 26px;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.card-container .card {
+    flex-basis: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+}
+
+.card .img-placeholder {
+    width: 250px;
+    height: 250px;
+    background-color: var(--secondary-text-color);
+    border: 4px solid var(--brand-color);
+    border-radius: 15px;
+}
+
+.card .card-description {
+    text-align: center;
+    color: var(--dark-text-color);
 }
