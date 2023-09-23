@@ -83,6 +83,11 @@ div.hero {
     flex-wrap: wrap-reverse;
 }
 
+.hero-text {
+    flex-basis: 950px;
+    flex-shrink: 1;
+}
+
 .hero-text .hero-main-text {
     font-size: 48px;
     color: var(--main-text-color);
@@ -256,4 +261,33 @@ div.hero {
 .cta-banner-button button:hover {
     opacity: 0.6;
     cursor: pointer;
+}
+
+/* Footer Section */
+
+footer {
+    background-color: var(--dark-background-color);
+    padding: 50px 0;
+}
+
+.container .copyright {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: var(--main-text-color);
+    text-align: center;
+}
+
+.container .copyright span {
+    color: #0f766e;
+}
+
+.container .coded-by {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: var(--main-text-color);
+    text-align: center;
+}
+
+.container .coded-by span {
+    color: var(--brand-color);
 }
