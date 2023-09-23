@@ -11,6 +11,7 @@
     --dark-text-color: #1F2937;
 
     /* Font Weights */
+    --logo-weight: 700;
     --extra-bold: 800;
     --regular: 400;
     --extra-light: 200;
@@ -21,4 +22,108 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border: 1px solid black;
+    transition: all 0.5s ease;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Header Styles */
+
+header {
+    background-color: var(--dark-background-color);
+}
+
+.container {
+    margin: 0 12% 20px 12%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    color: var(--secondary-text-color);
+}
+
+ul li a:hover {
+    color: var(--brand-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+a.logo {
+    font-size: 24px;
+    color: var(--main-text-color);
+    font-weight: var(--logo-weight);
+}
+
+div.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.hero-text .hero-main-text {
+    font-size: 48px;
+    color: var(--main-text-color);
+    font-weight: var(--extra-bold);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-text .description {
+    color: var(--secondary-text-color);
+    margin-bottom: 20px;
+}
+
+.hero-text button {
+    color: var(--main-text-color);
+    background-color: var(--brand-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.hero-text button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.hero .hero-image {
+    position: relative;
+    height: 300px;
+    flex-shrink: 0;
+    flex-basis: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.hero .hero-image img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    margin-top: -120px;
 }
